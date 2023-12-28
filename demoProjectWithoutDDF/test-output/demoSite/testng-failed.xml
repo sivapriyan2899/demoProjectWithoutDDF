@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [demoSite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="loginTest(failed)">
+    <classes>
+      <class name="demoProjectTesting.BothCorrect">
+        <methods>
+          <include name="LoginWithCorrectCredentials"/>
+        </methods>
+      </class> <!-- demoProjectTesting.BothCorrect -->
+      <class name="demoProjectTesting.BothInCorrect">
+        <methods>
+          <include name="LoginWithInCorrectCredentials"/>
+        </methods>
+      </class> <!-- demoProjectTesting.BothInCorrect -->
+      <class name="demoProjectTesting.CorrectPassword">
+        <methods>
+          <include name="LoginWithOnlyCorrectPassword"/>
+        </methods>
+      </class> <!-- demoProjectTesting.CorrectPassword -->
+      <class name="demoProjectTesting.CorrectUserName">
+        <methods>
+          <include name="LoginWithOnlyCorrectUserName"/>
+        </methods>
+      </class> <!-- demoProjectTesting.CorrectUserName -->
+    </classes>
+  </test> <!-- loginTest(failed) -->
+</suite> <!-- Failed suite [demoSite] -->
